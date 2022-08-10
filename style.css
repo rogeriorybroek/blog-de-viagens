@@ -1,0 +1,222 @@
+@import 'base.css';
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/****************
+       HOME
+****************/
+
+.home {
+    background: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachmenT: fixed;
+    height: 100vh;
+    position: relative;
+}
+.home .header {
+    padding: 30px;
+    background-color: black;
+    box-shadow: 0 0 20px black;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.home .header .nav ul li a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home .header .nav ul li .logo {
+    width: 100px;
+    margin: 0 50px;
+    border: 1px solid white;
+    transition-property: width;
+    transition-duration: 500ms;
+}
+
+.home .header .nav ul li .logo:hover {
+    border-color: rgb(75, 61, 161);
+    width: 110%;
+
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid white;
+    color: slateblue;
+    border-color: slateblue;
+}
+
+.home .banner {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 100px auto;
+}
+
+
+.home .banner h1 {
+    color: slateblue;
+    font-family: 'Glory', sans-serif;
+    display: inline-block;
+    background-color: black;
+
+    animation-name: minhaAnimacao;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+.home .banner .icon {
+    position: absolute;
+    width: 50px;
+    animation-name: meuIcon;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes meuIcon {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+
+    100% {
+        bottom: 95vh;
+        left: 95vw;
+    }
+}
+
+@keyframes minhaAnimacao {
+    0% {
+        box-shadow: 0 0 0 rgb(75, 61, 161);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgb(75, 61, 161);
+    }
+}
+
+/********************
+       QUEM SOMOS
+********************/
+
+.quem-somos {
+    background: rgb(195,195,195);
+    background: linear-gradient(180deg, rgba(195,195,195,1) 0%, rgba(113,106,75,1) 100%);
+    height: 100vh;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    color: slateblue;
+    font-family: 'Glory', sans-serif;
+    display: inline-block;
+    background-color: black;
+    margin: 50px 0;
+    font-size: 50px;
+
+    animation-name: minhaAnimacao;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.quem-somos .content {
+    display: flex;
+    padding: 20px;
+}
+
+
+.quem-somos .content .foto-casal {
+    width: 200px;
+}
+
+
+.quem-somos .content .texto {
+    margin-left: 50px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+/******************
+      FOTOS
+******************/
+
+.galeria {
+    background: rgb(58,59,57);
+    background: linear-gradient(180deg, rgba(58,59,57,1) 0%, rgba(113,106,75,1) 100%);
+    height: 900px;
+    text-align: center;
+}
+
+.galeria h2 {
+    color: slateblue;
+    font-family: 'Glory', sans-serif;
+    display: inline-block;
+    background-color: black;
+    margin: 50px 0;
+    font-size: 50px;
+
+    animation-name: minhaAnimacao;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.galeria .gallery-wrapper {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 50px auto;
+}
+
+.galeria .gallery-wrapper div {
+    width: 33%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.galeria .gallery-wrapper div img {
+    width: 100%;
+    filter: grayscale(80%);
+    border: 1px solid black;
+    transition-duration: 500ms;
+    transition-property: width filter;
+}
+
+.galeria .gallery-wrapper div img:hover {
+    filter: grayscale(0%);
+    width: 110%;
+}
+
+
+/*******************
+    POR ONDE ANDEI
+*******************/
+
